@@ -1,0 +1,169 @@
+/* ==== Global Base ==== */
+body {
+  background: #121212;
+  color: #EAEAEA;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+  color: #00BFFF;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 0.75em;
+}
+
+/* ==== Centered Content ==== */
+.centered {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==== Neon Glow Text ==== */
+.glow {
+  text-shadow: 0 0 10px #00BFFF, 0 0 40px #61DAFB;
+}
+
+/* ==== Buttons ==== */
+.button-neon, .login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #00BFFF 0%, #61DAFB 100%);
+  color: #181A20;
+  font-weight: bold;
+  font-size: 1.18em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px #00d5ff44;
+  padding: 14px 32px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.18s;
+}
+
+.button-neon:hover, .login-btn:hover {
+  box-shadow: 0 7px 40px #00d5ffaa, 0 2px 12px #61DAFB55;
+  background: linear-gradient(90deg, #24beff 0%, #8ae9fc 100%);
+  color: #121212;
+}
+
+/* ==== Sidebar ==== */
+.sidebar {
+  background: #181A20;
+  min-width: 250px;
+  height: 100vh;
+  padding: 32px 16px;
+  border-right: 2px solid #1b2936;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* ==== Repo & File Lists ==== */
+.repo-list, .file-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
+.repo-list li, .file-list li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: #ececec;
+  cursor: pointer;
+  padding: 7px 10px 7px 10px;
+  border-radius: 7px;
+  transition: background 0.16s, color 0.2s, font-weight 0.2s;
+}
+
+.repo-list li.selected, .file-list li.selected {
+  background: #213950;
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+.repo-list li:hover, .file-list li:hover {
+  background: #1a2852;
+  color: #61DAFB;
+}
+
+.file-list input[type="checkbox"] {
+  accent-color: #00BFFF;
+  margin-right: 8px;
+}
+
+/* ==== Main Card / Content ==== */
+.card {
+  background: #181A20;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px #0a283977, 0 1.5px 12px #00bfff22;
+  padding: 2em;
+  margin: 1.5em 0;
+}
+
+/* ==== Error & Info Alerts ==== */
+.alert-error {
+  color: #ff5555;
+  background: #2a131a;
+  border: 1px solid #ee325a8e;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin: 1.5em 0;
+}
+
+.alert-info {
+  color: #33d6ff;
+  background: #12182a;
+  border: 1px solid #33d6ff33;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin: 1.5em 0;
+}
+
+/* ==== Code Block ==== */
+.code-block {
+  background: #181A20;
+  color: #00FFFC;
+  border-radius: 10px;
+  padding: 1.45em;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1em;
+  overflow-x: auto;
+}
+
+/* ==== Form/Field Styling ==== */
+input, button, select {
+  border-radius: 6px;
+  border: none;
+  background: #1a202b;
+  color: #EAEAEA;
+  padding: 9px 12px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+/* Small screen only */
+.small-screen-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .small-screen-only {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #00BFFF;
+  }
+}
