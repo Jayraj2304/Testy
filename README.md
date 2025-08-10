@@ -25,7 +25,7 @@ TESTY is a web application that leverages the power of generative AI to automati
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/Jayraj2304/Testy
     ```
 
 2.  **Install backend dependencies:**
