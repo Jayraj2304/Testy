@@ -53,7 +53,7 @@ TESTY is a web application that leverages the power of generative AI to automati
 5.  **Start the backend server:**
 
     ```bash
-    cd ../backend
+    cd backend
     npm start
     ```
 
